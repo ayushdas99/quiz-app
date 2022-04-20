@@ -69,6 +69,14 @@ class Quiz extends Component{
             return(
                 <div>
                     <h2>You scored {this.state.score} out of {question.length}</h2>
+                    <p>Correct answers for the quiz are:</p>
+                    <ul>
+                        {QuizData.map((item, index) => (
+                            <li key={index}>
+                                {item.answer}
+                            </li>
+                        ))}
+                    </ul>
                 </div>
             )
         }
@@ -91,7 +99,7 @@ class Quiz extends Component{
                         Next
                     </button>
                 }
-                {index === QuizData.length && 
+                {index === QuizData.length - 1 && 
                 <button
                 className="ui inverted button"
                     disabled = {this.state.disabled}

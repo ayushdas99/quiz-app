@@ -2,3 +2,9 @@
     height: 1000px;
     width: 100vw;
 }
+
+.options {
+    padding: 8px;
+    border: 2px solid honeydew;
+    cursor: pointer;
+}
