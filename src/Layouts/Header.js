@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const StyleHeader = styled.div`
-background-color: brown;
+background-color: navy;
 padding: 20px;
 text-align: center;
 font-size: 25px;

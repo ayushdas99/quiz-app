@@ -33,6 +33,14 @@ class Quiz extends Component{
         }
 
     }
+
+    prevHandler = () => {
+        const {} = this.state
+        this.setState({ 
+            index:this.state.index - 1
+        })
+
+    }
     componentDidMount(){
         this.loadQuiz();
     }
@@ -57,18 +65,18 @@ class Quiz extends Component{
         })
     }
     finishHandler = () => {
-        if(this.state.index === QuizData.length - 1){
             this.setState({
                 quizEnd: true
             })
-        }
+        
     }
     render(){
         const{ question, options, index, UserAns, quizEnd } = this.state
         if(quizEnd){
             return(
-                <div>
-                    <h2>You scored {this.state.score} out of {question.length}</h2>
+                <div className="end">
+                    <h2>You scored {this.state.score} out of {QuizData.length}</h2>
+                    
                     <p>Correct answers for the quiz are:</p>
                     <ul>
                         {QuizData.map((item, index) => (
@@ -81,7 +89,7 @@ class Quiz extends Component{
             )
         }
         return(
-            <div>
+            <div className="quiz-main">
                 <h2>{question}</h2>
                 <span>{`Question ${index + 1} of ${QuizData.length}`}</span>
                 {options.map(option => (
@@ -91,22 +99,27 @@ class Quiz extends Component{
                         {option}
                     </p>
                 ))}
+                { index > 0 && index < QuizData.length  && 
+                <button
+                className="ui inverted button" 
+                    onClick = {this.prevHandler}>
+                        Previous
+                    </button>
+                }
                 { index < QuizData.length - 1 && 
                 <button
                 className="ui inverted button" 
-                    disabled = {this.state.disabled}
                     onClick = {this.nextHandler}>
                         Next
                     </button>
                 }
-                {index === QuizData.length - 1 && 
+                
                 <button
                 className="ui inverted button"
-                    disabled = {this.state.disabled}
                     onClick = {this.finishHandler}
                     >Submit
                     </button>
-                    }
+                    
             </div>
         )
     }

@@ -5,14 +5,14 @@ import React from "react";
 		{
 			id: 0,
 			question: `What is the capital of Nigeria?`,
-			options: [`New Delhi`, `Abuja`, `Aba`, `Onisha`],
+			options: [`Bauchi`, `Abuja`, `Adamawa`, `Onisha`],
 			answer: `Abuja`
 		},
 		{
 			id: 1,
 			question: `Who is the current Finance Minister of India?`,
-			options: [`Modi`, `Rajnath`, `Nirmala`, `Jaishankar`],
-			answer: `Nirmala`
+			options: [`Narendra Modi`, `Rajnath Singh`, `Nirmala Sitharaman`, `Dr. Jaishankar`],
+			answer: `Nirmala Sitharaman`
 		},
 		{
 			id: 2,
@@ -28,9 +28,9 @@ import React from "react";
 		},
 		{
 			id: 4,
-			question: `Who owns the famous IPL team Mumbai Indians`,
-			options: [`Adani`, `Birla`, `Tata`, `Ambani`],
-			answer: `Ambani`
+			question: `Which affluent Indian family owns the famous IPL team Mumbai Indians`,
+			options: [`Adanis`, `Birlas`, `Tatas`, `Ambanis`],
+			answer: `Ambanis`
 		},
 	];
 

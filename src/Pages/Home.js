@@ -6,14 +6,19 @@ import Footer from "../Layouts/Footer";
 
 export default function Home() {
     return(
-        <div>
-            <Header />
-            <div className="start-page">
+        <div className="home-background">    
         <h1>Welcome to the quiz app!</h1>
-        <h2>Let's go the quiz section and get started with it! </h2>
-        <button><Link to="/Instructions">Let's start</Link></button>
+        <h2>Let's start this amazing quiz right away! </h2>
+        <div className="start-button-container">
+            <ul>
+            <li className="start-button"><Link to="/Instructions">Let's start</Link></li>
+            </ul>
+        
         </div>
-        <Footer />
+        <div className="auth-container">
+            <Link to="/login" className="auth-button">Login</Link>
+            <Link to= "/regsiter" className="auth-button">Sign Up</Link>
+        </div>
         </div>
     )
 }

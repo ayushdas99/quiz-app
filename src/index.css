@@ -1,10 +1,80 @@
-.start {
-    height: 1000px;
-    width: 100vw;
+
+
+.home-background {
+    background-image: url('./background-3.webp');
+    background-position: center;
+    min-width: 100vw;
+    min-height: 100vh;
+    padding: 20px;
+    text-align: center;
 }
 
-.options {
-    padding: 8px;
-    border: 2px solid honeydew;
+.start-button-container {
+    width: 100%;
+    align-items: center;
+}
+
+.start-button {
+    background-color: greenyellow;
+    display: block;
+    color: white;
     cursor: pointer;
+    padding: 1rem;
+    border-radius: 30px;
+}
+
+.auth-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.auth-container .auth-button {
+    color: white;
+    cursor: pointer;
+    background-color: orange;
+    padding: 1rem 0;
+    width: 35%;
+    border-radius: 30px;
+}
+
+
+.options {
+    background-color: rgb(85, 226, 191);
+    color: white;
+    padding: 8px;
+    border-radius: 30px;
+    cursor: pointer;
+    width: 50%;
+    text-align: center;
+    
+}
+
+.instructions {
+    background-image: url('./background.webp');
+    background-position: center;
+    color: white;
+    text-align: center;
+    min-width: 100vw;
+    min-height: 100vh;
+    box-sizing: border-box;
+    border: 2px solid;
+    padding: 3px;
+    margin-left: 1rem;
+}
+
+.quiz-main {
+    background-image: url('./quiz-background.webp');
+    min-height: 100vh;
+    min-width: 100vw;
+    padding: 20px;
+}
+
+.end {
+    background-image: url('./background-endpage.webp');
+    min-width: 100vw;
+    min-height: 100vh;
+    background-position: center;
+    padding: 10px;
+    text-align: center;
 }
