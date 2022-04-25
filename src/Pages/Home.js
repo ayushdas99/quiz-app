@@ -1,7 +1,6 @@
 import React from "react";
-import Header from "../Layouts/Header";
 import { Link } from "react-router-dom";
-import Footer from "../Layouts/Footer";
+
 
 
 export default function Home() {
@@ -14,10 +13,6 @@ export default function Home() {
             <li className="start-button"><Link to="/Instructions">Let's start</Link></li>
             </ul>
         
-        </div>
-        <div className="auth-container">
-            <Link to="/login" className="auth-button">Login</Link>
-            <Link to= "/regsiter" className="auth-button">Sign Up</Link>
         </div>
         </div>
     )

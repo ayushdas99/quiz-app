@@ -1,5 +1,6 @@
 import React from "react";
 import { Component } from "react";
+import Navbar from "../Layouts/Navbar";
 import QuizData from "../QuizData";
 
 class Quiz extends Component{
@@ -75,7 +76,7 @@ class Quiz extends Component{
         if(quizEnd){
             return(
                 <div className="end">
-                    <h2>You scored {this.state.score} out of {QuizData.length}</h2>
+                    <h2>You scored {this.state.score} out of {QuizData.length}!!</h2>
                     
                     <p>Correct answers for the quiz are:</p>
                     <ul>
@@ -89,6 +90,8 @@ class Quiz extends Component{
             )
         }
         return(
+            <div>
+                <Navbar />
             <div className="quiz-main">
                 <h2>{question}</h2>
                 <span>{`Question ${index + 1} of ${QuizData.length}`}</span>
@@ -120,6 +123,7 @@ class Quiz extends Component{
                     >Submit
                     </button>
                     
+            </div>
             </div>
         )
     }
