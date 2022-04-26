@@ -10,38 +10,38 @@
 }
 
 .start-button-container {
-    width: 100%;
-    align-items: center;
+    width: 70%;
+
 }
 
 .start-button {
     background-color: greenyellow;
-    display: block;
+    display:grid;
     color: white;
     cursor: pointer;
     padding: 1rem;
     border-radius: 30px;
+    text-align: center;
+
 }
 
 .auth-container {
     width: 100%;
-    display: flex;
-    justify-content: space-around;
+    display: flex
+    
 }
 
-.auth-container .auth-button {
-    color: white;
+.auth-button {
     cursor: pointer;
     background-color: orange;
     padding: 1rem 0;
-    width: 35%;
     border-radius: 30px;
 }
 
 
 .options {
-    background-color: rgb(85, 226, 191);
-    color: white;
+    background-color: rgb(161, 212, 228);
+    color: black;
     padding: 8px;
     border-radius: 30px;
     cursor: pointer;
@@ -50,8 +50,17 @@
     
 }
 
+.options:hover {
+    background-color: cornflowerblue;
+}
+
+.options:active {
+    background-color: cornflowerblue;
+    transform: translateY(4px);
+}
+
 .instructions {
-    background-image: url('./background.webp');
+    background-image: url('./instructions-page.webp');
     background-position: center;
     color: white;
     text-align: center;
@@ -86,5 +95,15 @@
     padding: 20px;
     box-sizing: border-box;
     min-height: 100vh;
+    display: flexbox;
 
+}
+
+.login-page {
+    background-image: url('./login.webp');
+    background-position: center;
+    min-width: 100vw;
+    min-height: 100vh;
+    padding: 20px;
+    text-align: center;
 }

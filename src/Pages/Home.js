@@ -12,7 +12,11 @@ export default function Home() {
             <ul>
             <li className="start-button"><Link to="/Instructions">Let's start</Link></li>
             </ul>
-        
+        </div>
+        <div className="auth-container">
+        <ul>
+            <li className="auth-button"><Link to="/Login">Login</Link></li>
+            </ul>
         </div>
         </div>
     )
