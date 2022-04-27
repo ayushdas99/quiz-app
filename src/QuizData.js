@@ -28,9 +28,21 @@ import React from "react";
 		},
 		{
 			id: 4,
-			question: `Which affluent Indian family owns the famous IPL team Mumbai Indians`,
+			question: `Which affluent Indian family owns the famous IPL team Mumbai Indians?`,
 			options: [`Adanis`, `Birlas`, `Tatas`, `Ambanis`],
 			answer: `Ambanis`
+		},
+		{
+			id: 5,
+			question: `Who won the best actor award in this year's Academy Awards?`,
+			options: [`Will Smith`, `Robert Pattinson`, `Andrew Garfield`, `Benedict Cumberbatch`],
+			answer: `Will Smith`
+		},
+		{
+			id: 6,
+			question: `Which musician became the first Grammy winner from Pakistan?`,
+			options: [`Atif Aslam`, `Asim Azhar`, `Arooj Aftab`, `Adnan Dhool`],
+			answer: `Arooj Aftab`
 		},
 	];
 

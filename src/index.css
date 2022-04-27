@@ -1,7 +1,6 @@
 
-
 .home-background {
-    background-image: url('./background-3.webp');
+    background-image: url('./navbar.webp');
     background-position: center;
     min-width: 100vw;
     min-height: 100vh;
@@ -10,13 +9,12 @@
 }
 
 .start-button-container {
-    width: 70%;
+    width: 100%;
 
 }
 
 .start-button {
-    background-color: greenyellow;
-    display:grid;
+    background-color: chartreuse;
     color: white;
     cursor: pointer;
     padding: 1rem;
@@ -27,15 +25,15 @@
 
 .auth-container {
     width: 100%;
-    display: flex
+    
     
 }
 
 .auth-button {
     cursor: pointer;
     background-color: orange;
-    padding: 1rem 0;
-    border-radius: 30px;
+    border-radius: 20px;
+    padding: 1rem;
 }
 
 
@@ -67,9 +65,7 @@
     min-width: 100vw;
     min-height: 100vh;
     box-sizing: border-box;
-    border: 2px solid;
-    padding: 3px;
-    margin-left: 1rem;
+    padding: 20px;
 }
 
 .quiz-main {
@@ -89,14 +85,18 @@
 }
 
 .sidebar {
-    background-color: aquamarine;
+    background-image: url(./sidebar.webp);
     float: right;
     width: 30%;
     padding: 20px;
     box-sizing: border-box;
     min-height: 100vh;
-    display: flexbox;
+    display: block;
 
+}
+
+.button-style {
+    border-radius: 20px;
 }
 
 .login-page {
@@ -106,4 +106,13 @@
     min-height: 100vh;
     padding: 20px;
     text-align: center;
+}
+
+.navbar {
+    box-sizing: border-box;
+    float: left;
+    width: 25%;
+    background-image: url(./navbar.webp);
+    min-height: 100vh;
+    padding: 20px;
 }

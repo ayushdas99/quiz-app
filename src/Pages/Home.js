@@ -1,23 +1,27 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Navbar from "../Layouts/Navbar";
 
 
 
 export default function Home() {
     return(
+        <>
+        <Navbar />
         <div className="home-background">    
         <h1>Welcome to the quiz app!</h1>
         <h2>Let's start this amazing quiz right away! </h2>
         <div className="start-button-container">
             <ul>
-            <li className="start-button"><Link to="/Instructions">Let's start</Link></li>
+            <button className="start-button"><Link to="/Instructions">Let's start</Link></button>
             </ul>
         </div>
         <div className="auth-container">
         <ul>
-            <li className="auth-button"><Link to="/Login">Login</Link></li>
+            <button className="auth-button"><Link to="/Login">Login</Link></button>
             </ul>
         </div>
         </div>
+        </>
     )
 }

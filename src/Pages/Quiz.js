@@ -78,6 +78,20 @@ class Quiz extends Component{
         })
 
     }
+    quesixHandler = () => {
+        const {} = this.state
+        this.setState({ 
+            index:4
+        })
+
+    }
+    quessevenHandler = () => {
+        const {} = this.state
+        this.setState({ 
+            index:4
+        })
+
+    }
     
     
     componentDidMount(){
@@ -132,11 +146,13 @@ class Quiz extends Component{
             <>
             <div className='sidebar'>
         <h1>Question Grid</h1>
-        <button onClick={this.quesoneHandler}>1</button>  
+        <button className="button-style" onClick={this.quesoneHandler}>1</button>  
         <button onClick={this.questwoHandler}>2</button>  
         <button onClick={this.questhreeHandler}>3</button>  
         <button onClick={this.quesfourHandler}>4</button>  
         <button onClick={this.quesfiveHandler}>5</button>  
+        <button onClick={this.quessixHandler}>6</button>  
+        <button onClick={this.quessevenHandler}>7</button>  
        
         
         </div>

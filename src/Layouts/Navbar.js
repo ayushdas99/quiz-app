@@ -1,15 +1,17 @@
 import React from 'react'
 import QuizData from '../QuizData'
+import { Link } from 'react-router-dom'
 
 function Navbar() {
   return (
-    <div className='sidebar'>
-        <h1>Questions</h1>
-        <button onClick={QuizData[0]}>1</button>  
-        <button onClick={QuizData[1]}>2</button>  
-        <button onClick={QuizData[2]}>3</button>  
-        <button onClick={QuizData[3]}>4</button>  
-        <button onClick={QuizData[4]}>5</button>
+    <div className='navbar'>
+      <h1>MCQ Quiz</h1>
+      <ul>
+        <li><Link to='/About'>About</Link></li>
+        <li><Link to='/Login'>Login</Link></li>
+        <li><Link to='/Contact'>Contact Us</Link></li>
+      </ul>
+
     </div>
   )
 }
