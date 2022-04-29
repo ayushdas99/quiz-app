@@ -11,12 +11,12 @@ import React from "react";
 		{
 			id: 1,
 			question: `Who is the current Finance Minister of India?`,
-			options: [`Narendra Modi`, `Rajnath Singh`, `Nirmala Sitharaman`, `Dr. Jaishankar`],
+			options: [`Narendra Modi`, `Rajnath Singh`, `Nirmala Sitharaman`, `Dr. S. Jaishankar`],
 			answer: `Nirmala Sitharaman`
 		},
 		{
 			id: 2,
-			question: `Who won the recently concluded Women's World Cup?`,
+			question: `Who won the recently concluded Women's Cricket World Cup?`,
 			options: [`India`, `Australia`, `England`, `South Africa`],
 			answer: `Australia`
 		},

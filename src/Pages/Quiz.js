@@ -1,6 +1,5 @@
 import React from "react";
 import { Component } from "react";
-import Navbar from "../Layouts/Navbar";
 import QuizData from "../QuizData";
 
 class Quiz extends Component{
@@ -23,6 +22,7 @@ class Quiz extends Component{
             }
         })
     }
+
     nextHandler = () => {
         const {UserAns, answer, score} = this.state
         this.setState({ 
@@ -33,70 +33,58 @@ class Quiz extends Component{
                 score: score + 1
             })
         }
-
     }
 
     prevHandler = () => {
-        const {} = this.state
         this.setState({ 
             index:this.state.index - 1
         })
-
     }
-    quesoneHandler = () => {
-        const {} = this.state
+    quesOneHandler = () => {
         this.setState({ 
             index:0
         })
 
     }
-    questwoHandler = () => {
-        const {} = this.state
+    quesTwoHandler = () => {
         this.setState({ 
             index:1
         })
 
     }
-    questhreeHandler = () => {
-        const {} = this.state
+    quesThreeHandler = () => {
         this.setState({ 
             index:2
         })
 
     }
-    quesfourHandler = () => {
-        const {} = this.state
+    quesFourHandler = () => {
         this.setState({ 
             index:3
         })
 
     }
-    quesfiveHandler = () => {
-        const {} = this.state
+    quesFiveHandler = () => {
         this.setState({ 
             index:4
         })
 
     }
-    quesixHandler = () => {
-        const {} = this.state
+    quesSixHandler = () => {
         this.setState({ 
-            index:4
+            index:5
         })
-
     }
-    quessevenHandler = () => {
-        const {} = this.state
+    quesSevenHandler = () => {
         this.setState({ 
-            index:4
+            index:6
         })
-
     }
-    
-    
+        
     componentDidMount(){
         this.loadQuiz();
     }
+
     componentDidUpdate(prevProps, prevState){
         const{index} = this.state;
         if(this.state.index !== prevState.index){
@@ -111,20 +99,23 @@ class Quiz extends Component{
 
         }
     }
+
     checkAns = answer => {
         this.setState({
             UserAns: answer,
             disabled:false
         })
     }
+
     finishHandler = () => {
             this.setState({
                 quizEnd: true
             })
         
     }
+
     render(){
-        const{ question, options, index, UserAns, quizEnd, id } = this.state
+        const{ question, options, index, UserAns, quizEnd } = this.state
         if(quizEnd){
             return(
                 <div className="end">
@@ -146,13 +137,13 @@ class Quiz extends Component{
             <>
             <div className='sidebar'>
         <h1>Question Grid</h1>
-        <button className="button-style" onClick={this.quesoneHandler}>1</button>  
-        <button onClick={this.questwoHandler}>2</button>  
-        <button onClick={this.questhreeHandler}>3</button>  
-        <button onClick={this.quesfourHandler}>4</button>  
-        <button onClick={this.quesfiveHandler}>5</button>  
-        <button onClick={this.quessixHandler}>6</button>  
-        <button onClick={this.quessevenHandler}>7</button>  
+        <button className="button-style" onClick={this.quesOneHandler}>1</button>  
+        <button className="button-style" onClick={this.quesTwoHandler}>2</button>  
+        <button className="button-style" onClick={this.quesThreeHandler}>3</button>  
+        <button className="button-style" onClick={this.quesFourHandler}>4</button>  
+        <button className="button-style" onClick={this.quesFiveHandler}>5</button>  
+        <button className="button-style" onClick={this.quesSixHandler}>6</button>  
+        <button className="button-style" onClick={this.quesSevenHandler}>7</button>  
        
         
         </div>
@@ -170,21 +161,21 @@ class Quiz extends Component{
                 ))}
                 { index > 0 && index < QuizData.length  && 
                 <button
-                className="ui inverted button" 
+                className="previous-button" 
                     onClick = {this.prevHandler}>
                         &larr; Previous
                     </button>
                 }
                 { index < QuizData.length - 1 && 
                 <button
-                className="ui inverted button" 
+                className="next-button" 
                     onClick = {this.nextHandler}>
                         Next &rarr;
                     </button>
                 }
                 
                 <button
-                className="ui inverted button"
+                className="submit-button"
                     onClick = {this.finishHandler}
                     >Submit
                     </button>
@@ -193,8 +184,6 @@ class Quiz extends Component{
             </>
             
         )
-    }
-
-    
+    }   
 }
 export default Quiz

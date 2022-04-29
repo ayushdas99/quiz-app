@@ -14,28 +14,43 @@
 }
 
 .start-button {
-    background-color: chartreuse;
-    color: white;
+    border-color: aquamarine;
+    background-color: rgba(223, 200, 219, 0.664);
     cursor: pointer;
     padding: 1rem;
-    border-radius: 30px;
+    border-radius: 20px;
     text-align: center;
+}
 
+.start-button:hover{
+    background-color: rgb(127, 127, 197);
+}
+
+.home:hover {
+    background-color: cornflowerblue;
 }
 
 .auth-container {
-    width: 100%;
-    
-    
+    width: 100%;  
 }
 
 .auth-button {
     cursor: pointer;
-    background-color: orange;
+    background-color: rgb(216, 190, 141);
     border-radius: 20px;
     padding: 1rem;
 }
 
+.auth-button:hover {
+    background-color: rgb(129, 184, 124);
+}
+
+.go-button {
+    margin-top: 20px;
+    background-color: rgb(172, 216, 172);
+    padding: 10px;
+    border-radius: 15px;
+}
 
 .options {
     background-color: rgb(161, 212, 228);
@@ -44,8 +59,7 @@
     border-radius: 30px;
     cursor: pointer;
     width: 50%;
-    text-align: center;
-    
+    text-align: center;    
 }
 
 .options:hover {
@@ -57,6 +71,11 @@
     transform: translateY(4px);
 }
 
+.selected {
+    background-color: rgb(7, 104, 121);
+    color: white;
+}
+
 .instructions {
     background-image: url('./instructions-page.webp');
     background-position: center;
@@ -66,6 +85,10 @@
     min-height: 100vh;
     box-sizing: border-box;
     padding: 20px;
+}
+
+.instruction-button:hover{
+    background-color: cornflowerblue;
 }
 
 .quiz-main {
@@ -96,7 +119,10 @@
 }
 
 .button-style {
-    border-radius: 20px;
+    border-radius: 5px;
+    margin: 5px;
+    border-color: yellow;
+    
 }
 
 .login-page {
@@ -106,6 +132,7 @@
     min-height: 100vh;
     padding: 20px;
     text-align: center;
+    display:block;
 }
 
 .navbar {
@@ -115,4 +142,58 @@
     background-image: url(./navbar.webp);
     min-height: 100vh;
     padding: 20px;
+}
+
+.next-button {
+    border-color: cornflowerblue;
+    margin: 5px;
+    float: right;
+}
+
+.next-button:hover{
+    background-color: orange;
+}
+
+.previous-button {
+    border-color: cornflowerblue;
+    float: left;
+}
+
+.previous-button:hover{
+    background-color: orange;
+}
+
+.submit-button {
+    border-color: orange;
+    margin-top: 3rem;
+    margin-left: 6rem;   
+}
+
+.submit-button:hover{
+    background-color: cornflowerblue;
+}
+
+input[type=text], select{
+    background-color: rgb(192, 207, 135);
+    width: 65%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+    margin-top: 6px;
+}
+
+.about {
+    background-image: url(./about.webp);
+    min-width: 100vw;
+    min-height: 100vh;
+    padding: 30px;
+}
+
+.contact {
+    background-image: url(./contactus.webp);
+    min-width: 100vw;
+    min-height: 100vh;
+    padding: 30px;
 }

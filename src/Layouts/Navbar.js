@@ -7,9 +7,9 @@ function Navbar() {
     <div className='navbar'>
       <h1>MCQ Quiz</h1>
       <ul>
-        <li><Link to='/About'>About</Link></li>
-        <li><Link to='/Login'>Login</Link></li>
-        <li><Link to='/Contact'>Contact Us</Link></li>
+        <li><Link to='/About'><b>ABOUT</b></Link></li>
+        <li><Link to='/Login'><b>LOGIN</b></Link></li>
+        <li><Link to='/Contact'><b>CONTACT US</b></Link></li>
       </ul>
 
     </div>
