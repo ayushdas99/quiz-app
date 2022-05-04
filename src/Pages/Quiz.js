@@ -1,5 +1,6 @@
 import React from "react";
 import { Component } from "react";
+import { Link } from "react-router-dom";
 import QuizData from "../QuizData";
 
 class Quiz extends Component{
@@ -120,16 +121,15 @@ class Quiz extends Component{
             return(
                 <div className="end">
                     <h2>You scored {this.state.score} out of {QuizData.length}!!</h2>
-
-                    
                     <p>Correct answers for the quiz are:</p>
-                    <ul>
+                    
                         {QuizData.map((item, index) => (
-                            <li key={index}>
-                                {item.answer}
-                            </li>
+                            <p key={index}>
+                               {item.answer}
+                            </p>
                         ))}
-                    </ul>
+                <button className='quiz-button'><Link to='/Quiz'>PLAY again?</Link></button>
+                <button className='home'><Link to='/'>Take me HOME</Link></button>
                 </div>
             )
         }

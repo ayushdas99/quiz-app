@@ -107,6 +107,10 @@
     text-align: center;
 }
 
+.quiz-button:hover {
+    background-color: yellow;
+}
+
 .sidebar {
     background-image: url(./sidebar.webp);
     float: right;
@@ -197,3 +201,4 @@ input[type=text], select{
     min-height: 100vh;
     padding: 30px;
 }
+

@@ -4,9 +4,9 @@ import React from "react";
     
 		{
 			id: 0,
-			question: `What is the capital of Nigeria?`,
-			options: [`Bauchi`, `Abuja`, `Adamawa`, `Onisha`],
-			answer: `Abuja`
+			question: `What is the capital of Kazakhstan?`,
+			options: [`Almaty`, `Nur-Sultan`, `Shymkent`, `Aktobe`],
+			answer: `Nur-Sultan`
 		},
 		{
 			id: 1,
@@ -29,8 +29,8 @@ import React from "react";
 		{
 			id: 4,
 			question: `Which affluent Indian family owns the famous IPL team Mumbai Indians?`,
-			options: [`Adanis`, `Birlas`, `Tatas`, `Ambanis`],
-			answer: `Ambanis`
+			options: [`Adani`, `Birla`, `Tata`, `Ambani`],
+			answer: `Ambani`
 		},
 		{
 			id: 5,
